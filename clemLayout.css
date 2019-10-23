@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    /*text-align: center;*/
+}
+.wishListLayoutContainer{
+    /*border:3px solid red;*/
+}
+.wishListLayoutContainer h1 {
+    text-align: center;
+    margin: 4% 0 4% 0;
+}
+
+.wishListLayoutContent{
+    /*border:3px solid green;*/
+    width: 50%;
+    margin:auto
+}
+
+.itemOne,.itemTwo,.itemTree {
+    /*border:3px solid blue;*/
+    display: flex;
+    flex-direction: row;
+    margin: 5% 0;
+}
+
+.itemOneImage,.itemTwoImage,.itemTreeImage {
+    /*border:3px solid cyan;*/
+    width:20%;
+    height: 100%;
+    padding: 4% 2% 2% 2%;
+}
+
+.itemOneDescription,.itemTwoDescription,.itemTreeDescription{
+    /*border:3px solid purple;*/
+    width: 80%;
+    padding: 2%;
+    margin-left:4%;
+}
+.itemOneDescriptionTitle h2,.itemTwoDescriptionTitle h2,.itemTreeDescriptionTitle h2{
+    margin-bottom: 20px;
+}
