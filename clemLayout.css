@@ -41,3 +41,33 @@
 .itemOneDescriptionTitle h2,.itemTwoDescriptionTitle h2,.itemTreeDescriptionTitle h2{
     margin-bottom: 20px;
 }
+
+@media screen and (max-width:700px) {
+
+    .wishListLayoutContent{
+        width: 100%;
+    }
+
+    .itemOne,.itemTwo,.itemTree{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .itemTwo {
+        background-color: gainsboro;
+    }
+
+    .itemOneImage,.itemTwoImage,.itemTreeImage{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .itemOneDescription,.itemTwoDescription,.itemTreeDescription {
+        width: 100%;
+        margin:0;
+        text-align: center;
+        padding: 10%;
+    }
+}
