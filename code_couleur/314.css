@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css?family=Mansalva|Merienda|Open+Sans:400,400i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+body {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	background-color: #F7F6EE;
+	font-family: 'Merienda', cursive;
+	font-family: 'Luckiest Guy', cursive;
+}
+
+h1, h2 {
+	color: #E45865;
+	padding: 1rem 0;
+}
+
+p {
+	font-family: 'Quicksand', sans-serif;
+}
+
+img {
+	color-interpolation-filters:#FCD06B;
+}
+
+
+header nav {
+	background-color: #FCD06B;
+	position: sticky;
+	display : flex;
+	justify-content: space-between;
+	align-items: center;
+
+	height: 100px;
+
+}
+
+.logo {
+	padding: 20px;
+	font-size: 2rem;
+}
+
+.logo a {
+	text-decoration: none;
+	color: black;
+}
+
+.search {
+	display: flex;
+	justify-content: space-between;
+	border-bottom:1px black solid;
+	width: 350px;
+}
+
+.search input {
+	background-color: transparent;
+	border: none;
+	width: 100%;
+}
+
+.search button {
+	background-color: transparent;
+	border: none;
+	cursor:pointer;
+}
+
+.search button img{
+	height: 20px;
+}
+
+.search_down {
+	display: none;
+}
+
+
+.menu {
+	display: flex;
+	margin-right: 20px;
+}
+
+.menu li {
+	list-style-type: none;
+	text-transform: uppercase;
+}
+
+.menu a {
+	text-decoration: none;
+	padding: 10px 15px;
+}
+
+.login {
+	background-color: #eeeeee;
+	border-radius: 30px;
+}
+
+.login:hover {
+	background-color: #f9f9f9;
+}
+
+.signIn:hover {
+	color: #eeeeee;
+}
+
+.menu_profile {
+	justify-content: center;
+	height: 150px;
+}
+
+.menu_profile li {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	text-transform: capitalize;
+	padding: 20px 30px;
+}
+
+.menu_profile img {
+	height: 75px;
+}
+
+.menu_profile a {
+	color: black;
+}
+
+.menu_profile li:hover >img {
+	height: 78px;
+}
+
+.profile {
+	display: flex;
+	align-items: center;
+}
+
+.profile * {
+	margin: 0 10px;
+}
+
+.profile img {
+	border-radius: 50px;
+}
+
+@media screen and (max-width: 960px) {
+	.search_up {
+		display: none;
+	}
+
+	.search_down {
+		display: flex;
+		margin: 30px auto;
+		width: 80%;
+		max-width: 350px;
+	}
+
+	.search_down button img {
+		height: 20px;
+	}
+
+	.profile p {
+		display: none;
+	}
+
+	.profile img {
+		border-radius: 50px;
+		height: 65px;
+	}
+
+	.signIn {
+		display: none;
+	}
+
+	.menu {
+		margin-right: 18px;
+	}
+
+	.menu a {
+		padding: 7px 12px;
+		font-size: 0.7em;
+
+	}
+}
+
